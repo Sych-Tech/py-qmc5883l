@@ -179,8 +179,8 @@ x, y, min_x, min_y, max_x, max_y = read_data_file()
 MAX_SCALE = int(max(abs(min_x), abs(max_x), abs(min_y), abs(max_y)) / 500.0 * 750.0)
 
 # Convert lists x and y into Numpy N-dimensional arrays.
-x_arr = np.fromiter(x, np.float)
-y_arr = np.fromiter(y, np.float)
+x_arr = np.fromiter(x, float)
+y_arr = np.fromiter(y, float)
 
 # Calculate the ellipse which best fits the data.
 warning = ''
